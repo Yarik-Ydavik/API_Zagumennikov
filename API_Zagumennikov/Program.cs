@@ -10,6 +10,7 @@ static extern uint GetVersion();
 
 uint minorVersion = Convert.ToUInt32(GetVersion() & 0x0000FF00) >> 8;
 
+
 Console.WriteLine(" ");
 // Имя компьютера
 [DllImport("kernel32.dll", CharSet = CharSet.Unicode)]
