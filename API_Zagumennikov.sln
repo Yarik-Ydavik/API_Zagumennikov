@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API_Zagumennikov", "API_Zag
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Практическая работа №1", "Практическая работа №1\Практическая работа №1.vcxproj", "{05066D0C-A0EE-4DE8-8B35-D6F176AB5CDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Практическое занятие №3. Работа с процессами и потоками", "Практическое занятие №3. Работа с процессами и потоками\Практическое занятие №3. Работа с процессами и потоками.csproj", "{25A9649B-AA34-4355-A32A-A61B4FDC7C54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Практическое занятие №3. Работа с процессами и потоками", "Практическое занятие №3. Работа с процессами и потоками\Практическое занятие №3. Работа с процессами и потоками.csproj", "{25A9649B-AA34-4355-A32A-A61B4FDC7C54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Практическая работа №4. Эмуляция критической секции", "Практическая работа №4. Эмуляция критической секции\Практическая работа №4. Эмуляция критической секции.csproj", "{9FABE521-14F9-48C4-BB7A-A1A38896066C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Практическая работа №4. Эмуляция критической секции", "Практическая работа №4. Эмуляция критической секции\Практическая работа №4. Эмуляция критической секции.csproj", "{9FABE521-14F9-48C4-BB7A-A1A38896066C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Практическая работа №5. Блокировка и возобновление потоков", "Практическая работа №5. Блокировка и возобновление потоков\Практическая работа №5. Блокировка и возобновление потоков.csproj", "{121CE050-CE66-4A6C-922F-E10363874133}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,18 @@ Global
 		{9FABE521-14F9-48C4-BB7A-A1A38896066C}.Release|x64.Build.0 = Release|Any CPU
 		{9FABE521-14F9-48C4-BB7A-A1A38896066C}.Release|x86.ActiveCfg = Release|Any CPU
 		{9FABE521-14F9-48C4-BB7A-A1A38896066C}.Release|x86.Build.0 = Release|Any CPU
+		{121CE050-CE66-4A6C-922F-E10363874133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{121CE050-CE66-4A6C-922F-E10363874133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{121CE050-CE66-4A6C-922F-E10363874133}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{121CE050-CE66-4A6C-922F-E10363874133}.Debug|x64.Build.0 = Debug|Any CPU
+		{121CE050-CE66-4A6C-922F-E10363874133}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{121CE050-CE66-4A6C-922F-E10363874133}.Debug|x86.Build.0 = Debug|Any CPU
+		{121CE050-CE66-4A6C-922F-E10363874133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{121CE050-CE66-4A6C-922F-E10363874133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{121CE050-CE66-4A6C-922F-E10363874133}.Release|x64.ActiveCfg = Release|Any CPU
+		{121CE050-CE66-4A6C-922F-E10363874133}.Release|x64.Build.0 = Release|Any CPU
+		{121CE050-CE66-4A6C-922F-E10363874133}.Release|x86.ActiveCfg = Release|Any CPU
+		{121CE050-CE66-4A6C-922F-E10363874133}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
