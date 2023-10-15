@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Практическое з
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Практическая работа №4. Эмуляция критической секции", "Практическая работа №4. Эмуляция критической секции\Практическая работа №4. Эмуляция критической секции.csproj", "{9FABE521-14F9-48C4-BB7A-A1A38896066C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Практическая работа №5. Блокировка и возобновление потоков", "Практическая работа №5. Блокировка и возобновление потоков\Практическая работа №5. Блокировка и возобновление потоков.csproj", "{121CE050-CE66-4A6C-922F-E10363874133}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Практическая работа №5. Блокировка и возобновление потоков", "Практическая работа №5. Блокировка и возобновление потоков\Практическая работа №5. Блокировка и возобновление потоков.csproj", "{121CE050-CE66-4A6C-922F-E10363874133}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ПЗ 7. Анализ памяти процесса", "ПЗ 7. Анализ памяти процесса\ПЗ 7. Анализ памяти процесса.csproj", "{38C717EF-B482-4778-81A1-07340F337747}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +85,18 @@ Global
 		{121CE050-CE66-4A6C-922F-E10363874133}.Release|x64.Build.0 = Release|Any CPU
 		{121CE050-CE66-4A6C-922F-E10363874133}.Release|x86.ActiveCfg = Release|Any CPU
 		{121CE050-CE66-4A6C-922F-E10363874133}.Release|x86.Build.0 = Release|Any CPU
+		{38C717EF-B482-4778-81A1-07340F337747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38C717EF-B482-4778-81A1-07340F337747}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38C717EF-B482-4778-81A1-07340F337747}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{38C717EF-B482-4778-81A1-07340F337747}.Debug|x64.Build.0 = Debug|Any CPU
+		{38C717EF-B482-4778-81A1-07340F337747}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{38C717EF-B482-4778-81A1-07340F337747}.Debug|x86.Build.0 = Debug|Any CPU
+		{38C717EF-B482-4778-81A1-07340F337747}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38C717EF-B482-4778-81A1-07340F337747}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38C717EF-B482-4778-81A1-07340F337747}.Release|x64.ActiveCfg = Release|Any CPU
+		{38C717EF-B482-4778-81A1-07340F337747}.Release|x64.Build.0 = Release|Any CPU
+		{38C717EF-B482-4778-81A1-07340F337747}.Release|x86.ActiveCfg = Release|Any CPU
+		{38C717EF-B482-4778-81A1-07340F337747}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

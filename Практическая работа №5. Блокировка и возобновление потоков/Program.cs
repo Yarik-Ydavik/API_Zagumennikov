@@ -1,56 +1,49 @@
-﻿object lockObject = new object(); // создаем объект блокировки
+﻿object lockObject = new object();
 int value = 0;
-bool shouldStop = false; // флаг для завершения потока
+bool shouldStop = false;
 
 Thread thread2 = new Thread(delegate () {
-    int a = 2; // первый элемент прогрессии
-    int q = 3; // знаменатель прогрессии
-    int n = 5; // количество элементов прогрессии
-
-    Console.WriteLine("Геометрическая прогрессия:");
-
-    for (int i = 0; i < n; i++)
+    int x = 3;
+    int y = 5;
+    Console.WriteLine("Geometric progression:");
+    for (int i = 0; i < 5; i++)
     {
         Thread.Sleep(1000);
-        if (a == 18) // если получено заранее определенное значение
+        if (x == 375)
         {
-            value = a;
-            lock (lockObject) // блокируем объект
+            value = x;
+            lock (lockObject)
             {
-                // делаем что-то, например, выводим сообщение о блокировке
-                Console.Write("Поток заблокирован");
-
-                Thread.Sleep(500); // ждем произвольное время
-
-                Monitor.Pulse(lockObject); // отправляем сигнал на разблокировку
+                Console.WriteLine("Thread was blocked");
+                Thread.Sleep(500);
+                Monitor.Pulse(lockObject);
             }
-            shouldStop = true; // устанавливаем флаг завершения потока
-            break; // выходим из цикла
+            shouldStop = true;
+            break;
         }
-        Console.Write(a + " ");
-        a *= q;
+        Console.Write(x + " ");
+        x *= y;
     }
 
 });
 
 Thread thread1 = new Thread(delegate () {
     thread2.Start();
-
-    if (value == 18) // если получено заранее определенное значение
+    if (value == 375)
     {
-        lock (lockObject) // блокируем объект
+        lock (lockObject)
         {
-            Monitor.Wait(lockObject); // ожидаем сигнала на разблокировку
+            Monitor.Wait(lockObject);
         }
     }
 
-    while (thread2.IsAlive) // пока поток не завершился
+    while (thread2.IsAlive)
     {
-        if (shouldStop) // если установлен флаг завершения потока
+        if (shouldStop)
         {
-            thread2.Join(); // ожидаем завершения потока
-            Console.WriteLine("Поток завершен");
-            break; // выходим из цикла
+            thread2.Join();
+            Console.WriteLine("Thread was ended");
+            break;
         }
     }
 });
